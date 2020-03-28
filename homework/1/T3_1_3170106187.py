@@ -26,7 +26,7 @@ def main():
 
 # 
 # Note 
-# Surprisingly found x2 equals 0 only when t is above 15 but not 11
+# Surprisingly found x2 equals 0 only when t is above 17 but not 11 in python
 #
 
 if __name__ == '__main__':
