@@ -13,7 +13,7 @@ int main(){
     printf("Enter t\n");
     scanf("%d", &t);
 	a = 1.0;
-	b = pow(-10, t) - 1;
+	b = -1 * pow(10, t) - 1;
 	c = pow(10, t);
 
 	x1 = (-1 * b + sqrt(b * b - 4 * a * c)) / 2 / a;

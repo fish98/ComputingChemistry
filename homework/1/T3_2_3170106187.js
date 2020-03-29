@@ -15,7 +15,7 @@ let main = () => {
     const t = 17
     
 	let a = 1
-	let b = Math.pow(-10, t) - 1
+	let b = -1 * Math.pow(10, t) - 1
 	let c = Math.pow(10, t)
 
 	let x1 = (-1 * b + Math.sqrt(b * b - 4 * a * c)) / 2 / a

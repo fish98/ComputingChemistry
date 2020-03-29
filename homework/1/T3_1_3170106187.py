@@ -15,7 +15,7 @@ def main():
 
 	t = int(input("Enter t\n"))
 	a = 1
-	b = pow(-10, t) - 1
+	b = -1 * pow(10, t) - 1
 	c = pow(10, t)
 
 	x1 = (-1 * b + math.sqrt(b * b - 4 * a * c)) / 2 / a
