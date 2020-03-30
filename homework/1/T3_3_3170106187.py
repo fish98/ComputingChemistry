@@ -1,5 +1,7 @@
 # coding:utf-8
 
+import math
+from decimal import *
 # 
 # Another algorithm to generate answers to a specific function
 #
@@ -35,23 +37,23 @@ def main():
 #
 # Start searching
 #	
-	step = c / 2
-	while(step != limit):
+	# step = c / 2
+	# while(step != limit): 
 # Start from larger end
-		compare = test((x2+step), t) / test(start, t)
-		if compare > 0:
-			x2 = x2 + step
-		elif compare == 0:
-			x2 = x2 + step
-			break 
-		else: 
-			step = step / 10
+		# compare = round(test((x2+step), t) / test(start, t))
+		# if compare > 0:
+		# 	x2 = x2 + step
+		# elif compare == 0:
+		# 	x2 = x2 + step
+		# 	break 
+		# else: 
+		# 	step = step / 10
 
 # Reinit step
 	step = c 
 	while(step != limit):
 # Search for another end
-		compare = test((x1-step), t) / test(start, t) 
+		compare = test((x1-step), t) / test(start, t)
 		if compare > 0:
 			x1 = x1 - step
 		elif compare == 0:
@@ -60,16 +62,15 @@ def main():
 		else: 
 			step = step / 10
 
+	x2 = Decimal(c) / Decimal(x1)
+
 	print("Solution x1 = %d" % x1)
 	print("Solution x2 = %d" % x2)
-
-#
-#
 
 if __name__ == '__main__':
 	main()
 
 #
 # Arthor: Jiongchi Yu
-# Date: 2020.3.18
+# Date: 2020.3.29
 # 
