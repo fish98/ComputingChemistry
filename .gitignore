@@ -2,4 +2,6 @@ course/
 test*
 *.jpg
 *.png
+*.zip
+*.rar
 *.pdf

@@ -6,9 +6,7 @@ def train(data,start_b,start_a,learning_rate,num_iter):
 
 	for i in range(num_iter):
 		b,a =gradient(b,a,data,learning_rate)
-		print(b)
-		print(a)
-
+		
 	return [b,a]
 
 def gradient(tmp_b, tmp_a, data, learning_rate):
@@ -19,6 +17,7 @@ def gradient(tmp_b, tmp_a, data, learning_rate):
 	N = float(len(data))
 
 	for i in range(0,len(data)):
+    		
 		x = data[i][0]
 		y = data[i][1]
 	
@@ -27,6 +26,7 @@ def gradient(tmp_b, tmp_a, data, learning_rate):
 
 	new_b = tmp_b - (learning_rate * b_gradient)
 	new_a = tmp_a - (learning_rate * a_gradient)
+
 	return [new_b,new_a]    
 
 if __name__ =='__main__':
