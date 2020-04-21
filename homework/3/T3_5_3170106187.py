@@ -26,7 +26,7 @@ if __name__ =='__main__':
 # generate x output
 
     print("The simulation function is ΔH =", a, "* T", b)
-    print("Predicted ΔH of 350℃ is", predict(a, b, 673.15))
+    print("Predicted ΔH of 350℃ is", predict(a, b, 623.15))
 
 #
 # Arthor: Jiongchi Yu
