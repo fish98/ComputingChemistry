@@ -47,7 +47,7 @@ def main():
 		# Algorithm selection
 
 		# For brutal search, uncomment the line below
-		# brutal(x, y)
+		brutal(x, y)
 		
 		# For recursive algorithm, uncomment the line below
 		print("The possibility is : " + str(recursive(x, y-1)/pow(2, (y-1))))
